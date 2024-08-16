@@ -66,6 +66,22 @@ export default function Topbar({
   } = useTranslation();
   const [expand, setExpand] = useState(false);
 
+  const [announcement, setAnnouncement] = useState([
+    "📢 Free Shipping on Orders Above ₹1299/-",
+    "📢 *Additional 2% Discount On Prepaid Orders."
+  ]);
+
+  const [announcementIndex, setAnnouncementIndex] = useState(0);
+
+  setTimeout(() => {
+    if(announcement.length-1 === announcementIndex)
+      setAnnouncementIndex(0);
+    else
+      setAnnouncementIndex(announcementIndex+1);
+    
+  }, 3000);
+  
+
   const handleChangeLanguage = language => {
     i18n.changeLanguage(language);
   };
@@ -76,7 +92,7 @@ export default function Topbar({
         <FlexBetween width="100%">
           <FlexBox alignItems="center" gap={1}>
             <StyledChip label={t("HOT")} size="small" />
-            <Span className="title">{t("Free Express Shipping")}</Span>
+            <Span className="title">{announcement[announcementIndex]}</Span>
           </FlexBox>
 
           <IconButton disableRipple className="expand" onClick={() => setExpand(state => !state)}>
@@ -88,7 +104,7 @@ export default function Topbar({
           {
           /* LANGUAGE MENU SELECTOR */
         }
-          <BazaarMenu handler={e => <TouchRipple className="handler marginRight" onClick={e}>
+          {/* <BazaarMenu handler={e => <TouchRipple className="handler marginRight" onClick={e}>
                 <Span className="menuTitle">{selectedLanguage.title}</Span>
                 <ExpandMore fontSize="inherit" />
               </TouchRipple>} options={onClose => {
@@ -98,7 +114,7 @@ export default function Topbar({
           }}>
                   <Span className="menuTitle">{languageOptions[language].title}</Span>
                 </MenuItem>);
-        }} />
+        }} /> */}
 
           {
           /* SOCIAL LINKS AREA */
