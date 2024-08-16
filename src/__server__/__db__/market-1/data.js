@@ -1,18 +1,31 @@
 
 // carousel-data
-export const mainCarouselData = [{
-  title: "50% Off For Your First Shopping",
-  imgUrl: "/assets/images/products/nike-black.png",
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convalliss.`,
-  buttonText: "Shop Now",
-  buttonLik: "#"
-}, {
-  title: "50% Off For Your First Shopping",
-  imgUrl: "/assets/images/products/nike-black.png",
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convalliss.`,
-  buttonText: "Shop Now",
-  buttonLik: "#"
-}];
+export const mainCarouselData = [
+  {
+    id: 1,
+    title: "",
+    subTitle: "",
+    imgUrl: "/assets/images/new/products/caurosal-3.png",
+    description: ``,
+    buttonText: "",
+    buttonLink: "#"
+  }, {
+    id: 2,
+    title: "",
+    subTitle: "",
+    imgUrl: "/assets/images/new/products/caurosal-2.jpg",
+    description: ``,
+    buttonText: "",
+    buttonLink: "#"
+  },{
+    id: 3,
+    title: "",
+    subTitle: "",
+    imgUrl: "/assets/images/new/products/caurosal-1.jpg",
+    description: ``,
+    buttonText: "",
+    buttonLink: "#"
+  }];
 export const categories = [{
   id: "f4c1291a-ff9e-4aa2-aa6c-95eb8b8bcc5e",
   name: "Headphone",

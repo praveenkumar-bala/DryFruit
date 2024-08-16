@@ -5,7 +5,7 @@ import Setting from "components/settings";
 import Newsletter from "components/newsletter"; 
 // LOCAL CUSTOM COMPONENTS
 
-import Section1 from "../section-1";
+import Section1 from "../section-1"
 import Section2 from "../section-2";
 import Section3 from "../section-3";
 import Section4 from "../section-4";
