@@ -10,9 +10,10 @@ export const StyledCard = styled(Card)(({
   borderRadius: 8,
   padding: "0.75rem",
   alignItems: "center",
+  flexDirection: "column",
   transition: "all 250ms ease-in-out",
   "&:hover": {
-    boxShadow: theme.shadows[3]
+    boxShadow: theme.shadows[3],
   },
   [theme.breakpoints.down(375)]: {
     flexDirection: "column"

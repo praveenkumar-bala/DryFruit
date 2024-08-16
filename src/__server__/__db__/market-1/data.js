@@ -26,7 +26,10 @@ export const mainCarouselData = [
     buttonText: "",
     buttonLink: "#"
   }];
-export const categories = [{
+export const categories = [
+  
+  
+  {
   id: "f4c1291a-ff9e-4aa2-aa6c-95eb8b8bcc5e",
   name: "Headphone",
   icon: null,
@@ -88,10 +91,10 @@ export const categories = [{
   }
 }, {
   id: "6df3771a-7075-492d-8f1f-c8358cd6345f",
-  name: "Automobile",
+  name: "Blue Berry",
   icon: null,
-  slug: "automobile",
-  image: "/assets/images/products/Fashion/Clothes/7.DenimClassicBlueJeans.png",
+  slug: "blueberry",
+  image: "/assets/images/categories/dry-fruit/blue_bearry.png",
   description: null,
   parent: [],
   for: {
@@ -100,10 +103,10 @@ export const categories = [{
   }
 }, {
   id: "25a4d207-512d-4001-b531-1cded6665f88",
-  name: "Car",
+  name: "Cranberries",
   icon: null,
-  slug: "car",
-  image: "/assets/images/products/Fashion/Clothes/20.GrayOvercoatWomen.png",
+  slug: "cranberries",
+  image: "/assets/images/categories/dry-fruit/Cranberries.png",
   description: null,
   parent: [],
   for: {
@@ -112,10 +115,10 @@ export const categories = [{
   }
 }, {
   id: "79c89024-dff2-4a00-9ce5-251145dfc18f",
-  name: "Fashion",
+  name: "Raisins (Kismis)",
   icon: null,
-  slug: "fashion",
-  image: "/assets/images/products/Fashion/Jewellery/8.IndianPearlThreadEarrings.png",
+  slug: "raisins",
+  image: "/assets/images/categories/dry-fruit/raisins.png",
   description: null,
   parent: [],
   for: {
@@ -124,10 +127,10 @@ export const categories = [{
   }
 }, {
   id: "6097cbe8-eba5-4462-aea0-b0d53f9dd0ed",
-  name: "Mobile",
+  name: "Dates",
   icon: null,
-  slug: "mobile",
-  image: "/assets/images/products/Fashion/Jewellery/21.FeathersandBeadsBohemianNecklace.png",
+  slug: "dates",
+  image: "/assets/images/categories/dry-fruit/dates.png",
   description: null,
   parent: [],
   for: {
@@ -136,10 +139,10 @@ export const categories = [{
   }
 }, {
   id: "e6660169-fbba-4724-81e3-8ffae6ff3707",
-  name: "Laptop",
+  name: "Figs",
   icon: null,
-  slug: "laptop",
-  image: "/assets/images/products/Fashion/Shoes/11.Flowwhite.png",
+  slug: "figs",
+  image: "/assets/images/categories/dry-fruit/figs.png",
   description: null,
   parent: [],
   for: {
@@ -148,10 +151,10 @@ export const categories = [{
   }
 }, {
   id: "158d635a-76fd-425b-a158-1e8d8cd97542",
-  name: "Desktop",
+  name: "Apricot",
   icon: null,
-  slug: "desktop",
-  image: "/assets/images/products/Groceries/1.SaktiSambarPowder.png",
+  slug: "apricot",
+  image: "/assets/images/categories/dry-fruit/apricot.png",
   description: null,
   parent: [],
   for: {
@@ -160,10 +163,10 @@ export const categories = [{
   }
 }, {
   id: "0b68c451-0d4d-47ac-83e4-33651ae3d11f",
-  name: "Tablet",
+  name: "Almonds",
   icon: null,
-  slug: "tablet",
-  image: "/assets/images/products/Groceries/14.ACIProducts.png",
+  slug: "almonds",
+  image: "/assets/images/categories/dry-fruit/apricot.png",
   description: null,
   parent: [],
   for: {
@@ -172,10 +175,10 @@ export const categories = [{
   }
 }, {
   id: "7a069456-f06a-4688-994e-ddb620f9f67c",
-  name: "Fashion",
+  name: "Pista",
   icon: null,
-  slug: "fashion",
-  image: "/assets/images/products/Groceries/27.SardinesPack.png",
+  slug: "pista",
+  image: "/assets/images/categories/dry-fruit/pista.png",
   description: null,
   parent: [],
   for: {
@@ -184,10 +187,10 @@ export const categories = [{
   }
 }, {
   id: "5144e1aa-c745-44ae-a40b-a41a35229d27",
-  name: "Electronics",
+  name: "Walnut",
   icon: null,
-  slug: "electronics",
-  image: "/assets/images/products/Health&Beauty/12.BeautySocietyantiacnemask.png",
+  slug: "walnut",
+  image: "/assets/images/categories/dry-fruit/walnuts.png",
   description: null,
   parent: [],
   for: {
@@ -196,10 +199,10 @@ export const categories = [{
   }
 }, {
   id: "b75056ae-be37-4061-a06e-9db6a9fda38b",
-  name: "Furniture",
+  name: "Cashew",
   icon: null,
-  slug: "furniture",
-  image: "/assets/images/products/Health&Beauty/25.MarioBadescuSkinCareShampoo.png",
+  slug: "cashew",
+  image: "/assets/images/categories/dry-fruit/cashew.png",
   description: null,
   parent: [],
   for: {
@@ -208,10 +211,10 @@ export const categories = [{
   }
 }, {
   id: "282a5ae0-9d26-4edf-848b-ffb66d949bbe",
-  name: "Camera",
+  name: "Prunes",
   icon: null,
-  slug: "camera",
-  image: "/assets/images/products/Home&Garden/13.GardenRosesinBlueVase.png",
+  slug: "prunes",
+  image: "/assets/images/categories/dry-fruit/prunes.png",
   description: null,
   parent: [],
   for: {
@@ -220,10 +223,10 @@ export const categories = [{
   }
 }, {
   id: "3c36096b-73b4-4c3e-a768-f846cc889fd5",
-  name: "Electronics",
+  name: "Black Currant",
   icon: null,
-  slug: "electronics",
-  image: "/assets/images/products/Fashion/Accessories/12.Xiaomimiband2.png",
+  slug: "blackcurrant",
+  image: "/assets/images/categories/dry-fruit/blackcurrant.png",
   description: null,
   parent: [],
   for: {

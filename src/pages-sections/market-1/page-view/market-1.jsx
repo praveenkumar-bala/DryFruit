@@ -26,14 +26,21 @@ export default function MarketOnePageView() {
       <Section1 />
 
       {
-      /* FLASH DEALS SECTION */
+      /* CATEGORIES */
     }
-      <Section2 />
+      <Section9 />
 
       {
       /* TOP CATEGORIES */
     }
       <Section3 />
+
+      {
+      /* FLASH DEALS SECTION */
+    }
+      <Section2 />
+
+      
 
       {
       /* TOP RATED PRODUCTS */
@@ -69,11 +76,6 @@ export default function MarketOnePageView() {
       /* OPTICS / WATCH */
     }
       <Section13 />
-
-      {
-      /* CATEGORIES */
-    }
-      <Section9 />
 
       {
       /* MORE FOR YOU */

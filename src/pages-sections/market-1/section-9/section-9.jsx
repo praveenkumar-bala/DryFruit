@@ -9,6 +9,8 @@ import CategoryIcon from "icons/Category";
 
 import { Paragraph } from "components/Typography";
 import { SectionHeader } from "components/section-header"; 
+import { Carousel } from "components/carousel";
+import BazaarCard from "components/BazaarCard";
 // STYLED COMPONENT
 
 import { StyledCard } from "./styles"; 
@@ -16,19 +18,44 @@ import { StyledCard } from "./styles";
 
 import api from "utils/__api__/market-1";
 export default async function Section9() {
+  const responsive = [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 5
+    }
+  }, {
+    breakpoint: 959,
+    settings: {
+      slidesToShow: 4
+    }
+  }, {
+    breakpoint: 650,
+    settings: {
+      slidesToShow: 2
+    }
+  }, {
+    breakpoint: 370,
+    settings: {
+      slidesToShow: 1
+    }
+  }];
   const categories = await api.getCategories();
   return <Container className="mb-5">
-      <SectionHeader seeMoreLink="#" title="Categories" icon={<CategoryIcon color="primary" />} />
+      <SectionHeader seeMoreLink="#"/>
 
-      <Grid container spacing={3}>
-        {categories.map((item, ind) => <Grid item lg={2} md={3} sm={4} xs={6} key={ind}>
+      <Carousel slidesToShow={5} responsive={responsive} arrowStyles={{
+              boxShadow: 0
+            }}>
+        {categories.map((item, ind) => (
+          <BazaarCard>
             <Link href={`/products/search/${item.slug}`}>
-              <StyledCard elevation={1}>
-                <Image width={52} height={52} alt="fashion" src={item.image} />
+              <StyledCard>
+                <Image width={152} height={152} alt="fashion" src={item.image} />
                 <Paragraph fontWeight="600">{item.name}</Paragraph>
               </StyledCard>
             </Link>
-          </Grid>)}
-      </Grid>
+          </BazaarCard>
+        ))}
+      </Carousel>
     </Container>;
 }
