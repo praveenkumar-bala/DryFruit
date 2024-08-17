@@ -49,18 +49,18 @@ export default function CheckoutForm() {
       mb: 2
     }} />
 
-      <FlexBox alignItems="center" columnGap={1} mb={2}>
+      {/* <FlexBox alignItems="center" columnGap={1} mb={2}>
         <Span fontWeight="600">Additional Comments</Span>
 
         <Span p="6px 10px" fontSize={12} lineHeight="1" borderRadius="3px" color="primary.main" bgcolor="primary.light">
           Note
         </Span>
-      </FlexBox>
+      </FlexBox> */}
 
       {
       /* COMMENTS TEXT FIELD */
     }
-      <TextField variant="outlined" rows={6} fullWidth multiline />
+      {/* <TextField variant="outlined" rows={6} fullWidth multiline /> */}
 
       <Divider sx={{
       mb: 2

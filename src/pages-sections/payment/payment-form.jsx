@@ -72,7 +72,7 @@ export default function PaymentForm() {
           Back to checkout
         </Button>
 
-        <Button LinkComponent={Link} variant="contained" color="primary" href="/orders" type="submit" fullWidth>
+        <Button LinkComponent={Link} variant="contained" color="primary" href="/order-confirmation" type="submit" fullWidth>
           Review
         </Button>
       </Stack>

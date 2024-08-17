@@ -33,8 +33,11 @@ export default function OrderConfirmationPageView() {
           You will be receiving confirmation email with order details.
         </Paragraph>
 
-        <StyledButton color="primary" disableElevation variant="contained" className="button-link" LinkComponent={Link} href="/market-1">
-          Browse products
+        <StyledButton color="primary" disableElevation variant="contained" className="button-link" LinkComponent={Link} href="/orders">
+          View All Orders
+        </StyledButton>
+        <StyledButton color="primary" disableElevation variant="outlined" className="button-link" LinkComponent={Link} href="/">
+          Browse Products
         </StyledButton>
       </Wrapper>
     </Container>;

@@ -2,6 +2,7 @@
 
 import Container from "@mui/material/Container";
 import useTheme from "@mui/material/styles/useTheme";
+import Link from "next/link";
 // GLOBAL CUSTOM COMPONENTS
 
 import { Carousel } from "components/carousel";
@@ -31,6 +32,7 @@ export default function HeroCarousel({ mainCarouselData }) {
     >
       {mainCarouselData.map((item) => (
         <div key={item.id}>
+          <Link href={`/products/search/bettertomorrow`}>
           <ContentWrapper backgroundImage={item.imgUrl}>
             <Container>
               <div className="carousel-content">
@@ -53,6 +55,7 @@ export default function HeroCarousel({ mainCarouselData }) {
               </div>
             </Container>
           </ContentWrapper>
+          </Link>
         </div>
       ))}
     </Carousel>

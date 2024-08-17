@@ -232,7 +232,7 @@ export default function ProductIntro({ product }) {
               </Button>
             </FlexBox>
           )}
-          <Link href={`/cart`}>
+          <Link href={`/checkout-alternative`}>
             <Button
               ml={4}
               color="primary"

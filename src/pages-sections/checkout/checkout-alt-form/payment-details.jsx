@@ -10,6 +10,7 @@ import Checkbox from "@mui/material/Checkbox";
 import TextField from "@mui/material/TextField";
 import ButtonBase from "@mui/material/ButtonBase";
 import FormControlLabel from "@mui/material/FormControlLabel"; 
+import Link from "next/link";
 // FORMIK
 
 
@@ -131,7 +132,7 @@ const PaymentDetails = ({
         </Collapse>
       </Box>
 
-      <Button fullWidth type="submit" color="primary" variant="contained">
+      <Button fullWidth type="submit" color="primary" variant="contained" LinkComponent={Link} href="/order-confirmation">
         Place Order
       </Button>
     </Card>;
