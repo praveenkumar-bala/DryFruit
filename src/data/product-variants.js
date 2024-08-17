@@ -15,16 +15,16 @@ const productVariants = [{
     id: "optval_01GNCQMGRCBK0Z5FAB6JJD9J9Z"
   }]
 }, {
-  title: "Type",
+  title: "Offer",
   id: "opt_01GNCQMGM3SN0R7E08631EJFA2",
   values: [{
-    value: "type 1",
+    value: "offer 1",
     id: "optval_01GNCQMGMWTZ39SKCSE96WTEHN"
   }, {
-    value: "type 2",
+    value: "offer 2",
     id: "optval_01GNCQMGNJ7CVDN4Q8317CZ583"
   }, {
-    value: "type 3",
+    value: "offer 3",
     id: "optval_01GNCQMGP2P1P3G5TXB10W28WR"
   }]
 }];

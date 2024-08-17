@@ -25,16 +25,12 @@ export default function ProductDetailsPageView(props) {
       {
       /* FREQUENTLY BOUGHT PRODUCTS AREA */
     }
-      <FrequentlyBought products={props.frequentlyBought} />
+      <FrequentlyBought products={props.frequentlyBought.slice(0,4)} />
 
-      {
-      /* AVAILABLE SHOPS AREA */
-    }
-      <AvailableShops />
 
       {
       /* RELATED PRODUCTS AREA */
     }
-      <RelatedProducts products={props.relatedProducts} />
+      <RelatedProducts products={props.relatedProducts.slice(0,4)} />
     </Container>;
 }

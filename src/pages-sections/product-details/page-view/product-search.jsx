@@ -63,7 +63,7 @@ export default function ProductSearchPageView() {
 
   const handleChangeSortBy = useCallback(v => setSortBy(v), []);
   const toggleView = useCallback(v => () => setView(v), []);
-  const PRODUCTS = productDatabase.slice(95, 104).map(pro => ({ ...pro,
+  const PRODUCTS = productDatabase.map(pro => ({ ...pro,
     discount: 25
   }));
   return <div className="bg-white pt-2 pb-4">
@@ -74,7 +74,7 @@ export default function ProductSearchPageView() {
         <FlexBetween flexWrap="wrap" gap={2} mb={2}>
           <div>
             <H5 lineHeight={1} mb={1}>
-              Searching for “ mobile phone ”
+              Searching for “ Blue Berry ”
             </H5>
             <Paragraph color="grey.600">48 results found</Paragraph>
           </div>

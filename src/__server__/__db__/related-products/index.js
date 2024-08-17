@@ -6,11 +6,12 @@
 // IF YOU NEED HELP ABOUT SERVER SIDE IMPLEMENTATION
 
 // CONTACT US AT support@ui-lib.com
-import { frequentlyBoughtData, relatedProducts } from "./data";
+// import { frequentlyBoughtData, relatedProducts } from "./data";
+import products from "data/product-database";
 export const RelatedProductsEndpoints = Mock => {
   Mock.onGet("/api/frequently-bought-products").reply(async () => {
     try {
-      return [200, frequentlyBoughtData];
+      return [200, products];
     } catch (err) {
       console.error(err);
       return [500, {
@@ -20,7 +21,7 @@ export const RelatedProductsEndpoints = Mock => {
   });
   Mock.onGet("/api/related-products").reply(async () => {
     try {
-      return [200, relatedProducts];
+      return [200, products];
     } catch (err) {
       console.error(err);
       return [500, {

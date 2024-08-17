@@ -23,10 +23,10 @@ import { relatedProducts, frequentlyBoughtData } from "../related-products/data"
 const dbProducts = [...bazaarReactDatabase, ...products]; 
 // all used products in the bazaar template
 
-const productList = [...dbProducts, ...fashion1, ...fashion2, ...fashion3, ...furniture, ...furniture2, ...furniture3, ...gadget1, ...gadget2, ...gadget3, ...gift, ...grocery1, ...grocery2, ...grocery3, ...grocery4, ...healthBeauty, ...market1, ...market2, ...relatedProducts, ...frequentlyBoughtData, ...medical]; 
+const productList = [...products]; 
 // get unique products from product list
 
-const uniqueProducts = uniq(productList.map(item => item.slug)).map(item => productList.find(it => it.slug === item)); 
+const uniqueProducts = productList; 
 // get the all slugs
 
 const slugs = uniqueProducts.map(item => ({

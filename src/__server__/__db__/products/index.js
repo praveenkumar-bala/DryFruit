@@ -24,7 +24,7 @@ export const ProductsEndpoints = Mock => {
   Mock.onGet("/api/products/slug").reply(async config => {
     try {
       if (config?.params?.slug) {
-        const product = uniqueProducts.find(item => item?.slug === config.params.slug);
+        const product = uniqueProducts[0];
         if (product) return [200, product];else return [404, {
           message: "Product not found"
         }];

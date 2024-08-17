@@ -23,30 +23,27 @@ import { Slider } from "@mui/material";
 // FILTER OPTIONS
 
 const categoryList = [{
-  title: "Bath Preparations",
-  subCategories: ["Bubble Bath", "Bath Capsules", "Others"]
+  title: "Nuts",
+  subCategories: ["Almonds", "Walnut", "Cashew"]
 }, {
-  title: "Eye Makeup Preparations"
+  title: "Berrys",
+  subCategories: ["Blue Berry", "Cran Berry"]
 }, {
-  title: "Fragrance"
+  title: "Dried Fruits",
+  subCategories: ["Figs", "Apricot", "Pitted Prunes"]
 }, {
-  title: "Hair Preparations"
+  title: "Seeds",
+  subCategories: ["Pumpkin", "Chia Seeds", "Sunflower"]
 }];
 const BRANDS = [{
-  label: "Mac",
-  value: "mac"
+  label: "Brand-1",
+  value: "brand1"
 }, {
-  label: "Karts",
-  value: "karts"
+  label: "Brand-2",
+  value: "brand2"
 }, {
-  label: "Baals",
-  value: "baals"
-}, {
-  label: "Bukks",
-  value: "bukks"
-}, {
-  label: "Luasis",
-  value: "luasis"
+  label: "Brand-3",
+  value: "brand3"
 }];
 const OTHERS = [{
   label: "On Sale",
@@ -180,7 +177,7 @@ export default function ProductFilterCard({
       {
       /* COLORS VARIANT FILTER */
     }
-      <H6 mb={2}>Colors</H6>
+      {/* <H6 mb={2}>Colors</H6>
       <FlexBox mb={2} flexWrap="wrap" gap={1.5}>
         {colorList.map(item => <Box key={item} width={25} height={25} flexShrink={0} bgcolor={item} borderRadius="50%" onClick={() => handleChangeColor(item)} sx={{
         outlineOffset: 1,
@@ -188,6 +185,6 @@ export default function ProductFilterCard({
         outline: filters.color.includes(item) ? 1 : 0,
         outlineColor: item
       }} />)}
-      </FlexBox>
+      </FlexBox> */}
     </div>;
 }
