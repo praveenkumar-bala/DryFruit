@@ -33,7 +33,7 @@ export default async function Section2() {
       slidesToShow: 1
     }
   }];
-  return <SectionCreator icon={<Light color="primary" />} title="Flash Deals">
+  return <SectionCreator icon={<Light color="primary" />} title="Top Selling Products" seeMoreLink="#">
       <Carousel responsive={responsive}>
         {flashDeals.map(item => <Box pb={0.6} key={item.id}>
             <ProductCard1 id={item.id} slug={item.slug} title={item.title} price={item.price} rating={item.rating} imgUrl={item.thumbnail} discount={item.discount} />
