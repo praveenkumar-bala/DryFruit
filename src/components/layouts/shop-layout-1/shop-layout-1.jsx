@@ -33,12 +33,13 @@ export default function ShopLayout1({
     }
       <Sticky fixedOn={0} onSticky={toggleIsFixed} scrollDistance={300}>
         <Header isFixed={isFixed} midSlot={<SearchInputWithCategory />} />
+        <Navbar elevation={0} border={1} />
       </Sticky>
 
       {
       /* NAVIGATION BAR */
     }
-      <Navbar elevation={0} border={1} />
+      {/* <Navbar elevation={0} border={1} /> */}
 
       {
       /* BODY CONTENT */

@@ -1,5 +1,6 @@
 
 // LOCAL CUSTOM COMPONENTS
+import { Box } from "@mui/material";
 import Categories from "./categories";
 import NavigationList from "./nav-list"; 
 // STYLED COMPONENTS
@@ -25,7 +26,8 @@ export default function Navbar({
           {
         /* CATEGORY MEGA MENU */
       }
-          <Categories />
+          {/* <Categories /> */}
+          <Box/>
 
           {
         /* HORIZONTAL MENU */

@@ -1,356 +1,269 @@
-import categoriesMegaMenu from "./categoriesMegaMenu"; 
+import categoriesMegaMenu from "./categoriesMegaMenu";
 // MEGA-MENU DATA
 
-const megaMenus = [[{
-  title: "Home",
-  child: [{
-    title: "Market 1",
-    url: "/market-1"
-  }, {
-    title: "Market 2",
-    url: "/market-2"
-  }, {
-    title: "Gadget 1",
-    url: "/gadget-1"
-  }, {
-    title: "Gadget 2",
-    url: "/gadget-2"
-  }, {
-    title: "Grocery 1",
-    url: "/grocery-1"
-  }, {
-    title: "Grocery 2",
-    url: "/grocery-2"
-  }, 
-// { title: "Grocery 3", url: "/grocery-3" },
-  {
-    title: "Fashion 1",
-    url: "/fashion-1"
-  }, {
-    title: "Fashion 2",
-    url: "/fashion-2"
-  }, 
-// { title: "Fashion 3", url: "/fashion-3" },
-  {
-    title: "Gift Store",
-    url: "/gift-shop"
-  }, {
-    title: "Furniture 1",
-    url: "/furniture-1"
-  }, 
-// { title: "Furniture 2", url: "/furniture-2" },
-  {
-    title: "Health and Beauty",
-    url: "/health-beauty"
-  }]
-}], [{
-  title: "User Account",
-  child: [{
-    title: "Order List",
-    url: "/orders"
-  }, {
-    title: "Order Details",
-    url: "/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8"
-  }, {
-    title: "View Profile",
-    url: "/profile"
-  }, {
-    title: "Edit Profile",
-    url: "/profile/e42e28ea-528f-4bc8-81fb-97f658d67d75"
-  }, {
-    title: "Address List",
-    url: "/address"
-  }, {
-    title: "Add Address",
-    url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34"
-  }, {
-    title: "All tickets",
-    url: "/support-tickets"
-  }, {
-    title: "Ticket details",
-    url: "/support-tickets/when-will-my-product-arrive"
-  }, {
-    title: "Wishlist",
-    url: "/wish-list"
-  }]
-}], [{
-  title: "Vendor Account",
-  child: [{
-    title: "Dashboard",
-    url: "/vendor/dashboard"
-  }, {
-    title: "Profile",
-    url: "/vendor/account-settings"
-  }]
-}, {
-  title: "Products",
-  child: [{
-    title: "All products",
-    url: "/admin/products"
-  }, {
-    title: "Add/Edit product",
-    url: "/admin/products/create"
-  }]
-}, {
-  title: "Orders",
-  child: [{
-    title: "All orders",
-    url: "/admin/orders"
-  }, {
-    title: "Order details",
-    url: "/admin/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8"
-  }]
-}, {
-  title: "Authentication",
-  child: [{
-    title: "Login",
-    url: "/login"
-  }, {
-    title: "Register",
-    url: "/register"
-  }]
-}], [{
-  title: "Sale Page",
-  child: [{
-    title: "Sales Version 1",
-    url: "/sales-1"
-  }, {
-    title: "Sales Version 2",
-    url: "/sales-2"
-  }]
-}, {
-  title: "Shop",
-  child: [{
-    title: "Search product",
-    url: "/products/search/mobile phone"
-  }, {
-    title: "Single product",
-    url: "/products/lord-2019"
-  }, {
-    title: "Cart",
-    url: "/cart"
-  }, {
-    title: "Checkout",
-    url: "/checkout"
-  }, {
-    title: "Alternative Checkout",
-    url: "/checkout-alternative"
-  }, {
-    title: "Order confirmation",
-    url: "/order-confirmation"
-  }]
-}]]; 
+const megaMenus = [
+  [
+    {
+      title: "Nuts",
+      child: [
+        {
+          title: "Walnuts",
+          url: "/products/search/walnuts",
+        },
+        {
+          title: "Almonds",
+          url: "/products/search/almonds",
+        },
+        {
+          title: "Cashew",
+          url: "/products/search/cashew",
+        },
+        {
+          title: "Pistachio",
+          url: "/products/search/pista",
+        },
+        {
+          title: "Carn Nuts ",
+          url: "/products/search/carnnuts",
+        },
+      ],
+    },
+    {
+      title: "Dried Fruits",
+      child: [
+        {
+          title: "Raisins",
+          url: "/products/search/raisins",
+        },
+        {
+          title: "Dried Figs",
+          url: "/products/search/figs",
+        },
+        {
+          title: "Dried Gooseberry",
+          url: "/products/search/gooseberry",
+        },
+        {
+          title: "Dried Apricots",
+          url: "/products/search/apricots",
+        },
+        {
+          title: "Dried Prunes ",
+          url: "/products/search/prunes",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Dates",
+      child: [
+        {
+          title: "Wet Dates",
+          url: "/products/search/wetdates",
+        },
+        {
+          title: "Dry Dates",
+          url: "/products/search/drydates",
+        },
+      ],
+    },
+    {
+      title: "Seeds",
+      child: [
+        {
+          title: "Chia Seeds",
+          url: "/products/search/chiaseeds",
+        },
+        {
+          title: "Cucumber Seeds",
+          url: "/products/search/cucumberseeds",
+        },
+        {
+          title: "Flax Seeds",
+          url: "/products/search/flax",
+        },
+        {
+          title: "Musk Melon Seeds",
+          url: "/products/search/musk",
+        },
+        {
+          title: "Pumpkin Seeds",
+          url: "/products/search/pumpkin",
+        },
+        {
+          title: "Quinoa Seeds",
+          url: "/products/search/quinoa",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Berries",
+      child: [
+        {
+          title: "Blueberries",
+          url: "/products/search/blueberries",
+        },
+        {
+          title: "Cranberries",
+          url: "/products/search/cranberries",
+        },
+      ],
+    },
+    {
+      title: "Mixes",
+      child: [
+        {
+          title: "Trail Mix",
+          url: "/products/search/trailmix",
+        },
+        {
+          title: "Nut Mix",
+          url: "/admin/products/nutmix",
+        },
+        {
+          title: "Berries Mix",
+          url: "/admin/products/berriesmix",
+        },
+        {
+          title: "Seeds Mix",
+          url: "/admin/products/seedsmix",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Brand",
+      child: [
+        {
+          title: "Brand 1",
+          url: "/admin/products/brand1",
+        },
+        {
+          title: "Brand 2",
+          url: "/admin/products/brand2",
+        },
+      ],
+    },
+  ],
+];
 // MAIN NAVIGATION DATA
 
-const navbarNavigation = [{
-  title: "Home",
-  megaMenu: false,
-  megaMenuWithSub: false,
-  child: [{
-    title: "Market",
-    child: [{
-      title: "Market 1",
-      url: "/market-1"
-    }, {
-      title: "Market 2",
-      url: "/market-2"
-    }]
-  }, {
-    title: "Gadget",
-    child: [{
-      title: "Gadget 1",
-      url: "/gadget-1"
-    }, {
-      title: "Gadget 2",
-      url: "/gadget-2"
-    }, {
-      title: "Gadget 3",
-      url: "/gadget-3"
-    }]
-  }, {
-    title: "Grocery",
-    child: [{
-      title: "Grocery 1",
-      url: "/grocery-1"
-    }, {
-      title: "Grocery 2",
-      url: "/grocery-2"
-    }, {
-      title: "Grocery 3",
-      url: "/grocery-3"
-    }, {
-      title: "Grocery 4",
-      url: "/grocery-4"
-    }]
-  }, {
-    title: "Fashion",
-    child: [{
-      title: "Fashion 1",
-      url: "/fashion-1"
-    }, {
-      title: "Fashion 2",
-      url: "/fashion-2"
-    }, {
-      title: "Fashion 3",
-      url: "/fashion-3"
-    }]
-  }, {
-    title: "Furniture",
-    child: [{
-      title: "Furniture 1",
-      url: "/furniture-1"
-    }, {
-      title: "Furniture 2",
-      url: "/furniture-2"
-    }, {
-      title: "Furniture 3",
-      url: "/furniture-3"
-    }]
-  }, {
-    title: "Medical",
-    url: "/medical"
-  }, {
-    title: "Gift Store",
-    url: "/gift-shop"
-  }, {
-    title: "Health and Beauty",
-    url: "/health-beauty"
-  }]
-}, {
-  megaMenu: true,
-  megaMenuWithSub: false,
-  title: "Mega Menu",
-  child: megaMenus
-}, {
-  megaMenu: false,
-  megaMenuWithSub: true,
-  title: "Full Screen Menu",
-  child: categoriesMegaMenu
-}, {
-  megaMenu: false,
-  megaMenuWithSub: false,
-  title: "Pages",
-  child: [{
-    title: "Sale Page",
-    child: [{
-      title: "Version 1",
-      url: "/sales-1"
-    }, {
-      title: "Version 2",
-      url: "/sales-2"
-    }]
-  }, {
-    title: "Vendor",
-    child: [{
-      title: "All vendors",
-      url: "/shops"
-    }, {
-      title: "Vendor store",
-      url: "/shops/scarlett-beauty"
-    }]
-  }, {
+const navbarNavigation = [
+  {
+    title: "Home",
+    megaMenu: false,
+    megaMenuWithSub: false,
+    child: [
+      {
+        title: "Home",
+        url: "/",
+      },
+    ],
+  },
+  {
+    megaMenu: true,
+    megaMenuWithSub: false,
     title: "Shop",
-    child: [{
-      title: "Search product",
-      url: "/products/search/mobile phone"
-    }, {
-      title: "Single product",
-      url: "/products/lord-2019"
-    }, {
-      title: "Cart",
-      url: "/cart"
-    }, {
-      title: "Checkout",
-      url: "/checkout"
-    }, {
-      title: "Alternative Checkout",
-      url: "/checkout-alternative"
-    }, {
-      title: "Order confirmation",
-      url: "/order-confirmation"
-    }]
-  }, {
-    title: "Auth",
-    child: [{
-      title: "Login",
-      url: "/login"
-    }, {
-      title: "Register",
-      url: "/register"
-    }]
-  }]
-}, {
-  megaMenu: false,
-  megaMenuWithSub: false,
-  title: "User Account",
-  child: [{
-    title: "Orders",
-    child: [{
-      title: "Order List",
-      url: "/orders"
-    }, {
-      title: "Order Details",
-      url: "/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8"
-    }]
-  }, {
-    title: "Profile",
-    child: [{
-      title: "View Profile",
-      url: "/profile"
-    }, {
-      title: "Edit Profile",
-      url: "/profile/e42e28ea-528f-4bc8-81fb-97f658d67d75"
-    }]
-  }, {
-    title: "Address",
-    child: [{
-      title: "Address List",
-      url: "/address"
-    }, {
-      title: "Add Address",
-      url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34"
-    }]
-  }, {
-    title: "Support tickets",
-    child: [{
-      title: "All tickets",
-      url: "/support-tickets"
-    }, {
-      title: "Ticket details",
-      url: "/support-tickets/when-will-my-product-arrive"
-    }]
-  }, {
-    title: "Wishlist",
-    url: "/wish-list"
-  }]
-}, {
-  megaMenu: false,
-  megaMenuWithSub: false,
-  title: "Vendor Account",
-  child: [{
-    title: "Dashboard",
-    url: "/vendor/dashboard"
-  }, {
-    title: "Products",
-    child: [{
-      title: "All products",
-      url: "/admin/products"
-    }, {
-      title: "Add/Edit product",
-      url: "/admin/products/lord-2019"
-    }]
-  }, {
-    title: "Orders",
-    child: [{
-      title: "All orders",
-      url: "/admin/orders"
-    }, {
-      title: "Order details",
-      url: "/admin/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8"
-    }]
-  }, {
-    title: "Profile",
-    url: "/vendor/account-settings"
-  }]
-}];
+    child: megaMenus,
+  },
+  {
+    megaMenu: false,
+    megaMenuWithSub: false,
+    title: "Pages",
+    child: [
+      {
+        title: "Shop",
+        child: [
+          {
+            title: "Search product",
+            url: "/products/search/blue berries",
+          },
+          {
+            title: "Single product",
+            url: "/products/lord-2019",
+          },
+          {
+            title: "Cart",
+            url: "/cart",
+          },
+          {
+            title: "Checkout",
+            url: "/checkout-alternative",
+          },
+          {
+            title: "Order confirmation",
+            url: "/order-confirmation",
+          },
+        ],
+      },
+      {
+        title: "Auth",
+        child: [
+          {
+            title: "Login",
+            url: "/login",
+          },
+          {
+            title: "Register",
+            url: "/register",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    megaMenu: false,
+    megaMenuWithSub: false,
+    title: "User Account Pages",
+    child: [
+      {
+        title: "Orders",
+        child: [
+          {
+            title: "Order List",
+            url: "/orders",
+          },
+          {
+            title: "Order Details",
+            url: "/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8",
+          },
+        ],
+      },
+      {
+        title: "Profile",
+        child: [
+          {
+            title: "View Profile",
+            url: "/profile",
+          },
+          {
+            title: "Edit Profile",
+            url: "/profile/e42e28ea-528f-4bc8-81fb-97f658d67d75",
+          },
+        ],
+      },
+      {
+        title: "Address",
+        child: [
+          {
+            title: "Address List",
+            url: "/address",
+          },
+          {
+            title: "Add Address",
+            url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34",
+          },
+        ],
+      },
+      {
+        title: "Wishlist",
+        url: "/wish-list",
+      },
+    ],
+  },
+];
 export default navbarNavigation;

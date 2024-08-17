@@ -2,24 +2,21 @@ export const categories = [{
   title: "All Categories",
   value: "*"
 }, {
-  title: "Car",
-  value: "car"
+  title: "Nuts",
+  value: "nuts"
 }, {
-  title: "Clothes",
-  value: "clothes"
+  title: "Berries",
+  value: "berries"
 }, {
-  title: "Electronics",
-  value: "electronics"
+  title: "Dried Fruits",
+  value: "driedFruits"
 }, {
-  title: "Laptop",
-  value: "laptop"
+  title: "Seeds",
+  value: "seeds"
 }, {
-  title: "Desktop",
-  value: "desktop"
+  title: "Mixes",
+  value: "mixes"
 }, {
-  title: "Camera",
-  value: "camera"
-}, {
-  title: "Toys",
-  value: "toys"
+  title: "Combo",
+  value: "combo"
 }];
