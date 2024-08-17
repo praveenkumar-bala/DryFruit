@@ -194,8 +194,8 @@ export const Market1Endpoints = Mock => {
   });
   Mock.onGet("/api/market-1/get-more-items").reply(async () => {
     try {
-      const products = db.products.filter(item => item.for.type === "more-products");
-      return [200, products];
+      const products = db.products.filter(item => item.for.type === "cars");
+      return [200, [...products,...products]];
     } catch (err) {
       console.error(err);
       return [500, {

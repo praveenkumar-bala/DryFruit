@@ -2,7 +2,7 @@ import Link from "next/link";
 import { format } from "date-fns"; 
 // GLOBAL CUSTOM COMPONENTS
 
-import LazyImage from "components/LazyImage";
+import LazyImageV1 from "components/LazyImageV1";
 import { H3, Paragraph } from "components/Typography"; 
 // STYLED COMPONENTS
 
@@ -18,7 +18,7 @@ export default async function BlogCard({
 }) {
   return <BlogCardWrapper>
       <div className="img-wrapper">
-        <LazyImage src={image} width={379} height={246} alt={title} />
+        <LazyImageV1 src={image} width={379} height={246} alt={title} />
       </div>
 
       <div>

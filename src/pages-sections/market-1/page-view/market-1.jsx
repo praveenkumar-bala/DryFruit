@@ -20,8 +20,11 @@ import Section12 from "../section-12";
 import Section13 from "../section-13";
 import Section14 from '../section-14';
 import Section15 from '../section-15';
+import Section16 from "../../medical/section-6";
 
-export default function MarketOnePageView() {
+import api from "utils/__api__/grocery-2";
+export default async function MarketOnePageView() {
+  const testimonials = await api.getTestimonials();
   return <Fragment>
       {
       /* HERO SLIDER SECTION */
@@ -50,47 +53,17 @@ export default function MarketOnePageView() {
 
  <Section15 />
 
-      {
-      /* TOP CATEGORIES */
-    }
-      <Section3 />
 
-      
-
-      {
+ {
       /* TOP RATED PRODUCTS */
     }
       <Section4 />
 
-      {
-      /* NEW ARRIVAL LIST */
-    }
-      <Section5 />
-
-      {
-      /* BIG DISCOUNTS */
-    }
-      <Section12 />
 
       {
       /* CAR LIST */
     }
-      <Section6 />
-
-      {
-      /* MOBILE PHONES */
-    }
-      <Section7 />
-
-      {
-      /* PROMO BANNERS */
-    }
-      <Section8 />
-
-      {
-      /* OPTICS / WATCH */
-    }
-      <Section13 />
+      <Section6/>
 
       {
       /* MORE FOR YOU */
@@ -106,10 +79,11 @@ export default function MarketOnePageView() {
       /* POPUP NEWSLETTER FORM */
     }
       <Newsletter />
-
       {
-      /* SETTINGS IS USED ONLY FOR DEMO, YOU CAN REMOVE THIS */
-    }
-      <Setting />
+        /**
+         * Testimonial and Blog
+         */
+      }
+      <Section16 testimonials={testimonials}/>
     </Fragment>;
 }

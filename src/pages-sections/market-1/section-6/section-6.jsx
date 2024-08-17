@@ -11,10 +11,15 @@ import FlexBox from "components/flex-box/flex-box";
 import api from "utils/__api__/market-1";
 export default async function Section6() {
   const [products, brands] = await Promise.all([api.getCarList(), api.getCarBrands()]);
-  return <Container className="mb-5">
+  return <Container className="mb-5" sx={{
+    display: {
+      xs: "none",
+      md: "block"
+    }
+  }}>
       <FlexBox gap="1.75rem">
         <Sidebar brands={brands} />
-        <ProductGridList heading="Cars" products={products} />
+        <ProductGridList heading="Shop by Category" products={products} />
       </FlexBox>
     </Container>;
 }

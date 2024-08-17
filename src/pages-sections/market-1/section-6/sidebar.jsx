@@ -36,7 +36,7 @@ export default function Sidebar({
       mb: "0.75rem"
     }} onClick={handleCategoryClick(brand)} isSelected={selected === brand.slug} />)}
 
-      <ProductCategoryItem id="all" title="View All Brands" isSelected={selected === "all"} sx={{
+      <ProductCategoryItem id="all" title="View All" isSelected={selected === "all"} sx={{
       mt: 8,
       height: 44,
       justifyContent: "center"

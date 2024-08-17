@@ -14,7 +14,7 @@ import { Paragraph } from "components/Typography";
 
 import { Heading } from "./styles";
 export default function Footer1() {
-  return <Box component="footer" bgcolor="#222935" mb={{
+  return <Box component="footer" bgcolor="#222935" mt={5} mb={{
     sm: 0,
     xs: 7
   }}>
@@ -51,15 +51,15 @@ export default function Footer1() {
             <Heading>Contact Us</Heading>
 
             <Paragraph py={0.6} color="grey.500">
-              70 Washington Square South, New York, NY 10012, United States
+              70th Square South, Pallikaranai, Chennai, Tamil Nadu, Inidia - 600100
             </Paragraph>
 
             <Paragraph py={0.6} color="grey.500">
-              Email: uilib.help@gmail.com
+              Email: omrpravin@gmail.com
             </Paragraph>
 
             <Paragraph py={0.6} mb={2} color="grey.500">
-              Phone: +1 1123 456 780
+              Phone: +91 8870284284
             </Paragraph>
 
             {

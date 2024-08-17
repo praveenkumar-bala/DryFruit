@@ -14,6 +14,6 @@ export default function LogoSection() {
         Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.
       </Paragraph>
 
-      <AppStore />
+      {/* <AppStore /> */}
     </Fragment>;
 }

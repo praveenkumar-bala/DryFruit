@@ -8,6 +8,8 @@ import BazaarImage from "components/BazaarImage";
 import FlexRowCenter from "components/flex-box/flex-row-center";
 import Link from "next/link";
 import Grid from "@mui/material/Grid";
+import DottedStar from "icons/DottedStar"; 
+import { SectionHeader } from "components/section-header"; 
 // GLOBAL CUSTOM COMPONENTS
 
 import LazyImage from "components/LazyImage";
@@ -57,9 +59,9 @@ export default async function Section8() {
     responsive: responsive
   };
   return (
+    
     <Container className="mt-4 mb-4">
-      <H3 mb={3}>Our Brands</H3>
-
+      <SectionHeader icon={<DottedStar />} title="Our Brands" seeMoreLink="#" />
       <Box padding={4} bgcolor="white" sx={{}}>
         <Carousel {...settings} responsive={responsive}>
           {brands.map(({ id, image, description }) => (<>
