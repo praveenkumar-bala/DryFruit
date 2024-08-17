@@ -76,7 +76,6 @@ export default function ProductCard1({
         /* DISCOUNT PERCENT CHIP IF AVAILABLE */
       }
         <DiscountChip discount={discount} />
-
         {
         /* HOVER ACTION ICONS */
       }

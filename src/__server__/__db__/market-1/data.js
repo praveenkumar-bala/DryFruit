@@ -3477,3 +3477,63 @@ export const serviceList = [{
   title: "24/7 Support",
   description: null
 }];
+
+
+// brands
+
+export const brandList = [{
+  id: "9aee1898-23e0-4965-8f0d-427dc963ae07",
+  slug: "farmley",
+  name: "Farmley",
+  image: "/assets/images/brands/new/farmley.png",
+  description:"Enjoy India's first Pathogen-Free dry fruits and nuts that come processed with State-of-the-Art German technology.",
+  type: "nuts",
+  for: {
+    demo: "market-2",
+    type: "top-brands"
+  }
+}, {
+  id: "e370f16a-90e2-4f26-b9af-a38d6f645a4c",
+  slug: "paberboat",
+  name: "Paber Boat",
+  image: "/assets/images/brands/new/paberboat.png",
+  description:"Enjoy India's first Pathogen-Free dry fruits and nuts that come processed with State-of-the-Art German technology.",
+  type: "nuts",
+  for: {
+    demo: "market-2",
+    type: "top-brands"
+  }
+}, {
+  id: "024ec2a2-7ca7-46c2-8990-f78ac4215dd1",
+  slug: "farmley",
+  name: "Farmley",
+  image: "/assets/images/brands/new/farmley.png",
+  description:"Enjoy India's first Pathogen-Free dry fruits and nuts that come processed with State-of-the-Art German technology.",
+  type: "nuts",
+  for: {
+    demo: "market-2",
+    type: "top-brands"
+  }
+}, {
+  id: "d8f4c60e-6bac-4fdc-9880-999fbddac97d",
+  slug: "wonderland",
+  name: "wonder land",
+  image: "/assets/images/brands/new/wonderland.png",
+  description:"Enjoy India's first Pathogen-Free dry fruits and nuts that come processed with State-of-the-Art German technology.",
+  type: "nuts",
+  for: {
+    demo: "market-2",
+    type: "top-brands"
+  }
+}, {
+  id: "0c74cb7c-6082-4640-9380-815928be7127",
+  slug: "paberboat",
+  name: "Paber Boat",
+  image: "/assets/images/brands/new/paberboat.png",
+  description:"Enjoy India's first Pathogen-Free dry fruits and nuts that come processed with State-of-the-Art German technology.",
+  type: "nuts",
+  for: {
+    demo: "market-2",
+    type: "top-brands"
+  }
+}];

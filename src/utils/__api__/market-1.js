@@ -72,7 +72,12 @@ const getBigDiscountList = cache(async () => {
   const response = await axios.get("/api/market-1/big-discounts");
   return response.data;
 });
+const getBrands = cache(async () => {
+  const response = await axios.get("/api/market-1/brand");
+  return response.data;
+});
 export default {
+  getBrands,
   getCarList,
   getCarBrands,
   getMoreItems,

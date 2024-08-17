@@ -213,4 +213,15 @@ export const Market1Endpoints = Mock => {
       }];
     }
   });
+
+  Mock.onGet("/api/market-1/brand").reply(async () => {
+    try {
+      return [200, db.brandList];
+    } catch (err) {
+      console.error(err);
+      return [500, {
+        message: "Internal server error"
+      }];
+    }
+  });
 };
