@@ -21,6 +21,7 @@ import Section13 from "../section-13";
 import Section14 from '../section-14';
 import Section15 from '../section-15';
 import Section16 from "../../medical/section-6";
+import Section16A from "../section-16";
 
 import api from "utils/__api__/grocery-2";
 export default async function MarketOnePageView() {
@@ -85,5 +86,7 @@ export default async function MarketOnePageView() {
          */
       }
       <Section16 testimonials={testimonials}/>
+
+      <Section16A />
     </Fragment>;
 }
