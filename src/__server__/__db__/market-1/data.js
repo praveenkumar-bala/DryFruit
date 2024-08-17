@@ -1554,7 +1554,7 @@ export const products = [
     },
   },
   {
-    id: "c5115152-2a07-43b1-8c7a-1eecc6565a03",
+    id: "c5115152-2a07-43b1-8c7a-1eecc6565a031",
     slug: "budi-2017",
     shop: {
       id: "262079f6-bebf-4738-b393-418e48319709",
@@ -1607,7 +1607,7 @@ export const products = [
     },
   },
   {
-    id: "35debb8a-86c7-40fe-a825-48760d67ba23",
+    id: "35debb8a-86c7-40fe-a825-48760d67ba232",
     slug: "resla-2015",
     shop: {
       id: "99106eb8-d14f-4127-8af7-209a481763cb",
@@ -3435,7 +3435,7 @@ export const brands = [
     },
   },
   {
-    id: "44668f9f-e8e4-473e-bae4-591e45adf4e4",
+    id: "44668f9f-e8e4-473e-bae4-591e45adf4e41",
     slug: "berries",
     name: "Berries",
     image: "/assets/images/products/new/category-2.png",

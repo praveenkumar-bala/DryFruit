@@ -32,7 +32,7 @@ export default function RootLayout({
             </ThemeProvider>
           </SettingsProvider>
         </CartProvider>
-        <GoogleAnalytics gaId="G-XKPD36JXY0" />
+        {/* <GoogleAnalytics gaId="G-XKPD36JXY0" /> */}
       </body>
     </html>;
 }

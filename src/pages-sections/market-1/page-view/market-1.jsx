@@ -79,7 +79,7 @@ export default async function MarketOnePageView() {
       {
       /* POPUP NEWSLETTER FORM */
     }
-      <Newsletter />
+      {/* <Newsletter /> */}
       {
         /**
          * Testimonial and Blog
