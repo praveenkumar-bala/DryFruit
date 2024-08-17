@@ -166,7 +166,7 @@ export const categories = [
   name: "Almonds",
   icon: null,
   slug: "almonds",
-  image: "/assets/images/categories/dry-fruit/apricot.png",
+  image: "/assets/images/categories/dry-fruit/almonds.png",
   description: null,
   parent: [],
   for: {
