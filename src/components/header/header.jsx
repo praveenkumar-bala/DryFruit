@@ -48,7 +48,7 @@ export default function Header({
         {
         /* SHOW DROP DOWN CATEGORY BUTTON WHEN HEADER FIXED */
       }
-        {isFixed ? <CategoriesMenu /> : null}
+        {/* {isFixed ? <CategoriesMenu /> : null} */}
       </FlexBox>
 
       {

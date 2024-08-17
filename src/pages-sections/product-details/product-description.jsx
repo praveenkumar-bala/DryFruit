@@ -8,7 +8,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 const Item = styled(Box)(({ theme }) => ({
   ...theme.typography.body2,
   color: theme.palette.text.secondary,
-  borderTop: `1px solid ${theme.palette.text.secondary}`,
+  // borderTop: `1px solid ${theme.palette.text.secondary}`,
   borderBottom: `1px solid ${theme.palette.text.secondary}`
 }));
 

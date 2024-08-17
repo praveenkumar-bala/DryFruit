@@ -66,6 +66,7 @@ export default async function Section8() {
         <Carousel {...settings} responsive={responsive}>
           {brands.map(({ id, image, description }) => (<>
             <FlexRowCenter height="100%" margin="auto" key={id}>
+            <Link href={`/products/search/brand1`}>
               <BazaarImage
                 alt="brand"
                 width="auto"
@@ -83,6 +84,7 @@ export default async function Section8() {
               }}>
                 <H4>{description}</H4>
               </Box>
+              </Link>
             </FlexRowCenter> 
             </>
           ))}

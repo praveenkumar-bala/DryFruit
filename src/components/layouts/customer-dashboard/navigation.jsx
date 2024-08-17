@@ -49,17 +49,12 @@ const MENUS = [{
     href: "/orders",
     title: "Orders",
     Icon: ShoppingBagOutlined,
-    count: 5
+    count: 1
   }, {
     href: "/wish-list",
     title: "Wishlist",
     Icon: FavoriteBorder,
-    count: 19
-  }, {
-    href: "/support-tickets",
-    title: "Support Tickets",
-    Icon: CustomerService,
-    count: 1
+    count: 13
   }]
 }, {
   title: "ACCOUNT SETTINGS",
@@ -72,11 +67,6 @@ const MENUS = [{
     href: "/address",
     title: "Addresses",
     Icon: Place,
-    count: 16
-  }, {
-    href: "/payment-methods",
-    title: "Payment Methods",
-    Icon: CreditCard,
     count: 4
   }]
 }];
