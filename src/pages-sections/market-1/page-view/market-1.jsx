@@ -19,6 +19,7 @@ import Section11 from "../section-11";
 import Section12 from "../section-12";
 import Section13 from "../section-13";
 import Section14 from '../section-14';
+import Section15 from '../section-15';
 
 export default function MarketOnePageView() {
   return <Fragment>
@@ -43,6 +44,11 @@ export default function MarketOnePageView() {
     }
       <Section2 />
 
+{
+  // Best Offers
+}
+
+ <Section15 />
 
       {
       /* TOP CATEGORIES */

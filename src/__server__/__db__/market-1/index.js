@@ -224,4 +224,15 @@ export const Market1Endpoints = Mock => {
       }];
     }
   });
+
+  Mock.onGet("/api/market-1/discount-card-list").reply(() => {
+    try {
+      return [200, db.discountCardList];
+    } catch (err) {
+      console.error(err);
+      return [500, {
+        message: "Internal server error"
+      }];
+    }
+  });
 };

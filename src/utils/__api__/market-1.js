@@ -76,6 +76,10 @@ const getBrands = cache(async () => {
   const response = await axios.get("/api/market-1/brand");
   return response.data;
 });
+const getDiscountBannerList = cache(async () => {
+  const response = await axios.get("/api/market-1/discount-card-list");
+  return response.data;
+});
 export default {
   getBrands,
   getCarList,
@@ -95,5 +99,6 @@ export default {
   getTopRatedBrand,
   getNewArrivalList,
   getBigDiscountList,
-  getTopRatedProduct
+  getTopRatedProduct,
+  getDiscountBannerList
 };

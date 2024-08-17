@@ -3728,3 +3728,28 @@ export const brandList = [
     },
   },
 ];
+
+// discount banner list
+
+export const discountCardList = [{
+  id: 1,
+  title: "25% Special Off Today",
+  subtitle: "Till 10 Sept, 2024",
+  imgUrl: `/assets/images/products/new/offer2.png`,
+  shopUrl: "/",
+  bgColor: "#F6FFE5"
+}, {
+  id: 2,
+  title: "15% Off for All Product Only Need to Subscribe",
+  subtitle: "Subscribe Us",
+  imgUrl: `/assets/images/products/new/offer2.png`,
+  shopUrl: "/",
+  bgColor: "#FFF8E5"
+}, {
+  id: 3,
+  title: "25% Special Off Today Only for Vegetables",
+  subtitle: "Till 10 Sept, 2021",
+  imgUrl: `/assets/images/products/new/offer2.png`,
+  shopUrl: "/",
+  bgColor: "#F6FFE5"
+}]; 
